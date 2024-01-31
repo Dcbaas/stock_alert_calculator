@@ -33,3 +33,11 @@ StockCalcArgs parse_args(std::span<char*> argv)
     
     return args;
 }
+
+void perform_stock_price_calculation(const float price, StockPriceCalculation &calculation)
+{
+    calculation.buy_price = price;
+    calculation.loss_8_percent = price * 0.92;
+    calculation.gain_20_percent = price * 1.20;
+    calculation.gain_25_percent = price * 1.25;
+}

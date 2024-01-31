@@ -23,4 +23,6 @@ struct StockPriceCalculation
     float gain_25_percent;
 };
 
+void perform_stock_price_calculation(const float price, StockPriceCalculation& calculation);
+
 #endif // !STOCK_CALC_H
